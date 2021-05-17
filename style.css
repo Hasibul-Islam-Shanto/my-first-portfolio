@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Montserrat:wght@400;900&family=Ubuntu:wght@400;700&display=swap');
+
+/* ---For all titles----- */
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+
+/* Navbar Styling */
+
+.navbar {
+    background-color: crimson;
+}
+
+.navbar ul {
+    padding: 10px 10px 10px 10px;
+    margin-right: 5%;
+}
+
+.navbar-text {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Ubuntu';
+    margin-left: 10%;
+}
+
+.navbar a {
+    color: white;
+    font-family: 'Montserrat';
+    margin-left: 25px;
+    font-size: 1.1rem;
+}
+
+.navbar a:hover {
+    color: gray;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+
+/* Home section styling..... */
+
+.home {
+    background: url("img.png") no-repeat center;
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0 200px;
+    font-family: 'Ubuntu';
+}
+
+.text1 {
+    color: white;
+    font-size: 27px;
+}
+
+.text2 {
+    color: white;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.text3 {
+    color: white;
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.text3 span {
+    color: crimson;
+    font-weight: 500;
+}
+
+
+/* About section styling */
+
+.about img {
+    height: 400;
+    width: 400px;
+    padding: 3% 3%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+
+.about .title::after {
+    content: "who i am";
+}
+
+.text {
+    font-size: 2rem;
+    text-align: start;
+    font-weight: 700px;
+    color: crimson;
+    margin-left: 2%;
+}
+
+.para {
+    text-align: start;
+    font-size: 1.5rem;
+    padding-right: 10%;
+    font-weight: 400px;
+    margin-left: 2%;
+}
+
+.about a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-left: 15px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.about a:hover {
+    color: crimson;
+    background: none;
+}
+
+
+/* Skills styling */
+
+.skill .title {
+    margin-top: 25px;
+}
+
+.skill .title::after {
+    content: "what i know";
+}
+
+.skill .texts {
+    color: crimson;
+    font-size: 22px;
+}
+
+.skill p {
+    font-size: 18px;
+    text-align: left;
+}
+
+.skill span {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.skill .txt-p {
+    padding: 5% 20%;
+}
+
+
+/* Service Styling */
+
+.service {
+    color: white;
+}
+
+.service .title {
+    color: black;
+}
+
+.service .row {
+    padding: 80px 100px;
+}
+
+.service .title::after {
+    content: "what I provide";
+}
+
+.service .card {
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 35px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 5px 5px;
+}
+
+.service .card-title {
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.service .card-text {
+    font-size: 18px;
+}
+
+.service .card:hover {
+    background: crimson;
+}
+
+
+/* Contact Styling */
+
+.contact .title::after {
+    content: "get in touch";
+}
+
+.contact .title {
+    margin-top: 60px;
+}
+
+.contact .text-ct {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact .contact-txt {
+    padding: 5% 20%;
+}
+
+.contact p {
+    font-size: 18px;
+    text-align: left;
+    color: white;
+    text-align: center;
+}
+
+.contact .row {
+    background-color: crimson;
+}
+
+.contact li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 50px;
+    padding: 2% 2%;
+    margin-left: 10px;
+}
+
+.contact li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.contact li a:hover {
+    color: gray;
+}
+
+
+/* footer styling */
+
+footer {
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a {
+    color: crimson;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
